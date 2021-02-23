@@ -2,3 +2,7 @@
 SELECT Name FROM `pieces`
 <!-- Question 2 -->
 SELECT * FROM Providers;
+<!-- Question 3 -->
+SELECT Piece, AVG(Price)
+    FROM Provides
+GROUP BY Piece;
