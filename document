@@ -14,3 +14,7 @@ WHERE piece=1
 SELECT Name FROM pieces INNER JOIN provides 
 ON pieces.Code=provides.Piece 
 WHERE Provider='HAL'
+<!-- Question 6 -->
+SELECT pieces.Name,providers.Name,MAX(Price) 
+FROM provides INNER JOIN pieces on pieces.Code=provides.Piece 
+              INNER JOIN providers ON providers.Code=provides.Provider
