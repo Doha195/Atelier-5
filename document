@@ -6,3 +6,7 @@ SELECT * FROM Providers;
 SELECT Piece, AVG(Price)
     FROM Provides
 GROUP BY Piece;
+<!-- Question 4 -->
+SELECT Name FROM providers INNER JOIN provides 
+ON providers.Code=provides.Provider 
+WHERE piece=1
