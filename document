@@ -23,3 +23,6 @@ Update pieces
 SET Name='pignons'
 WHERE code=1
 INSERT INTO Provides(Piece, Provider, Price) VALUES(1,'TNBC',7);
+<!-- Question 8 -->
+UPDATE provides 
+SET Price=Price+1
