@@ -26,3 +26,6 @@ INSERT INTO Provides(Piece, Provider, Price) VALUES(1,'TNBC',7);
 <!-- Question 8 -->
 UPDATE provides 
 SET Price=Price+1
+<!-- Question 9  -->
+DELETE FROM provides 
+WHERE Provider='RBT'AND Piece=4;
