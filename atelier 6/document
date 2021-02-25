@@ -3,3 +3,7 @@ SELECT scientists.Name, projects.Name, projects.Hours
 FROM assignedto INNER JOIN scientists ON assignedto.Scientist=scientists.SSN 
                 INNER JOIN projects ON assignedto.Project=projects.Code
 ORDER BY projects.Name, scientists.Name ASC
+<!-- Question 2 -->
+SELECT projects.Name 
+FROM projects LEFT JOIN assignedto ON assignedto.Project=projects.Code 
+WHERE assignedto.Project IS NULL
