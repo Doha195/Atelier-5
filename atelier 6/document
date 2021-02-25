@@ -1,0 +1,4 @@
+<!-- Question 1 -->
+SELECT scientists.Name, projects.Name, projects.Hours 
+FROM assignedto INNER JOIN scientists ON assignedto.Scientist=scientists.SSN 
+                INNER JOIN projects ON assignedto.Project=projects.Code
